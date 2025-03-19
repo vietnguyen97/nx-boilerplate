@@ -2,7 +2,12 @@
   "name": "@my-workspace/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "release:app1": "nx run app1:version",
+    "release:app2": "nx run app2:version",
+    "release:shared-utils": "nx run shared-utils:version",
+    "release:all": "nx run-many --target=version --all"
+  },
   "private": true,
   "dependencies": {
     "@nrwl/workspace": "^19.8.4",
@@ -14,6 +19,7 @@
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
     "@eslint/js": "^9.8.0",
+    "@jscutlery/semver": "^5.6.0",
     "@nrwl/react": "^19.8.4",
     "@nx/eslint": "19.8.4",
     "@nx/eslint-plugin": "19.8.4",

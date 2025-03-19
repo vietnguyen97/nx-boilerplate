@@ -4,6 +4,12 @@
   "sourceRoot": "shared-utils/src",
   "projectType": "library",
   "tags": [],
-  "// targets": "to see all targets run: nx show project shared-utils --web",
-  "targets": {}
+  "targets": {
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "atom"
+      }
+    }
+  }
 }

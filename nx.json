@@ -18,6 +18,9 @@
   "nxCloudId": "67dac8352e7b0549f1a047df",
   "plugins": [
     {
+      "plugin": "@jscutlery/semver"
+    },
+    {
       "plugin": "@nx/js/typescript",
       "options": {
         "typecheck": {
@@ -72,5 +75,11 @@
         "unitTestRunner": "none"
       }
     }
-  }
+  },
+  "release": {
+    "version": {
+      "conventionalCommits": true
+    }
+  },
+  "npmScope": "your-org"
 }
