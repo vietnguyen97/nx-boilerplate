@@ -5,8 +5,15 @@
   "projectType": "library",
   "tags": [],
   "targets": {
-    "version": {
-      "executor": "@jscutlery/semver:version",
+  "build": {
+    "executor": "@nrwl/vite:build",
+    "options": {
+      "outputPath": "dist/shared-utils",
+      "configFile": "shared-utils/vite.config.ts"
+    }
+  },
+  "version": {
+    "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "atom"
       }
