@@ -1,90 +1,62 @@
-# MyWorkspace
+## Tài liệu tham khảo
+https://nx.dev/blog/versioning-and-releasing-packages-in-a-monorepo
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+<!-- lib dùng để generate CHANGELOG and sync version -->
+https://www.npmjs.com/package/@jscutlery/semver
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+```shell
+# install project
+yarn install
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+# run release manual
+git commit -m "fix(name-project): something project"
+git commit -m "fix(app1): comment"
+yarn release: name project
 
-## Finish your remote caching setup
+# run release manual all
+yarn release:all
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/zJuwIdX4eN)
-
-
-## Generate a library
-
-```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
-```
-
-## Run tasks
-
-To build the library use:
-
-```sh
-npx nx build pkg1
-```
-
-To run any task with Nx use:
-
-```sh
-npx nx <target> <project-name>
-```
-
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
-
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Versioning and releasing
-
-To version and release the library use
+# run release automation
+yarn commit
 
 ```
-npx nx release
+## Mô tả option khi chạy yarn commit
+
+1. Chọn loại thay đổi (type)
+Select the type of change that you're committing:
+📌 Ví dụ: Nếu bạn thêm một tính năng, chọn feat.
+
+ 2. Phạm vi thay đổi (scope)
+ What is the scope of this change (e.g. component or file name) (press enter to skip)
+📌 Ví dụ: Nếu bạn chỉ thay đổi trong app1, nhập app1.
+
+ 3. Mô tả ngắn gọn (short description)
+? Write a short, imperative tense description of the change (max 94 chars):
+📌 Ví dụ: "update login validation" (Cập nhật validate đăng nhập)
+
+4. Mô tả chi tiết (long description)
+? Provide a longer description of the change (press enter to skip)
+📌 Ví dụ: something
+
+5. Thay đổi có gây ảnh hưởng (breaking changes) không?
+? Are there any breaking changes? (Yes/No)
+📌 Ví dụ: Nếu bạn thay đổi API nhưng không tương thích ngược, chọn Yes và mô tả thêm.
+
+6. Thay đổi có liên quan đến issue nào không?
+? Does this change affect any open issues? (Yes/No)
+Yes nếu commit này liên quan đến một issue trên GitHub/Jira.
+No nếu không.
+Nếu chọn Yes, bạn có thể thêm mã issue như "fix #123".
+
+=> cuối cùng chạy yarn release:all
+
+## Mô tả update version 
+```shell
+yarn commit
 ```
+Nếu thay đổi chỉ là bug fix → version sẽ tăng theo dạng 0.0.x (patch update).
 
-Pass `--dry-run` to see what would happen without actually releasing the library.
+Nếu thay đổi có tính năng mới → version sẽ tăng theo dạng 0.x.0 (minor update).
 
-[Learn more about Nx release &raquo;](hhttps://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Nếu thay đổi lớn, ảnh hưởng đến backward compatibility → version sẽ lên 1.0.0 (major update).
 
-## Keep TypeScript project references up to date
-
-Nx automatically updates TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in `tsconfig.json` files to ensure they remain accurate based on your project dependencies (`import` or `require` statements). This sync is automatically done when running tasks such as `build` or `typecheck`, which require updated references to function correctly.
-
-To manually trigger the process to sync the project graph dependencies information to the TypeScript project references, run the following command:
-
-```sh
-npx nx sync
-```
-
-You can enforce that the TypeScript project references are always in the correct state when running in CI by adding a step to your CI job configuration that runs the following command:
-
-```sh
-npx nx sync:check
-```
-
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
-
-
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Install Nx Console
-
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
-
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Useful links
-
-Learn more:
-
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)

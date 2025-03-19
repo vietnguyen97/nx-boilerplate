@@ -8,8 +8,15 @@
     "version": {
       "executor": "@jscutlery/semver:version",
       "options": {
-        "preset": "atom"
+        "preset": "atom",
+        "outputPath": "dist/app1"
       }
     }
+  },
+  "scripts": {
+    "version": "nx run app1:version",
+    "prebuild": "yarn version",
+    "build": "nx build app1",
+    "build:versioned": "node scripts/build-versioned.js"
   }
 }
