@@ -1,6 +1,6 @@
 {
   "name": "@my-workspace/source",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "license": "MIT",
   "scripts": {
     "release:app1": "nx run app1:version",
