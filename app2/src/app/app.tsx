@@ -6,7 +6,6 @@ export function App() {
   return (
     <div>
       <NxWelcome title="app2" />
-
       <br />
       <hr />
       <br />
@@ -34,7 +33,7 @@ export function App() {
           path="/page-2"
           element={
             <div>
-              <Link to="/">Click here to go back to root page.</Link>
+              <Link to="/">Click here to go back to root page. test</Link>
             </div>
           }
         />
