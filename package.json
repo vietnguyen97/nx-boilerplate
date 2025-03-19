@@ -1,13 +1,15 @@
 {
   "name": "@my-workspace/source",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "release:app1": "nx run app1:version",
     "release:app2": "nx run app2:version",
     "release:shared-utils": "nx run shared-utils:version",
     "release:all": "nx run-many --target=version --all",
-    "commit": "cz"
+    "commit": "cz",
+    "build": "nx run-many --target=build --all",
+    "build:versioned": "yarn version && yarn build"
   },
   "config": {
     "commitizen": {
