@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.0](https://github.com/vietnguyen97/nx-boilerplate/compare/shared-utils-0.0.5...shared-utils-1.0.0) (2025-03-20)
+
 ## [0.0.5](https://github.com/vietnguyen97/nx-boilerplate/compare/shared-utils-0.0.4...shared-utils-0.0.5) (2025-03-20)
 
 
