@@ -1386,6 +1386,11 @@
     "@eslint/core" "^0.12.0"
     levn "^0.4.1"
 
+"@hsc-share/ui@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@hsc-share/ui/-/ui-0.0.6.tgz#a5a099daf2878a296966e451c675bc84dac3b127"
+  integrity sha512-ie0Bf4DWFd2WE7GElWXoy9V0RHoFfUAJraymBnCtKfSoMPsW/L9/kEhN3cR3pPPmnRIJZAHkUqUEgRrv6KKQhQ==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@humanfs/core/-/core-0.19.1.tgz#17c55ca7d426733fe3c561906b8173c336b40a77"

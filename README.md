@@ -19,6 +19,13 @@ yarn release:all
 # run release automation
 yarn commit
 
+# generate libs share
+npx nx generate @nrwl/react:library --name=hscUi --directory=libs/ui --publishable --importPath=@hsc-ui/hscUi
+
+#push npm
+yarn nx build --name
+npm publish --access public
+
 ```
 ## Mô tả option khi chạy yarn commit
 

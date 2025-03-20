@@ -1,8 +1,10 @@
 import NxWelcome from './nx-welcome';
-
+// import {} from '@hsc-share/ui'; // Removed as it is unused and causing an error
 import { Route, Routes, Link } from 'react-router-dom';
+import '@hsc-share/ui';
 
 export function App() {
+  console.log(f());
   return (
     <div>
       <NxWelcome title="app1" />
