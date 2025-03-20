@@ -1,3 +1,14 @@
+## 1.3.0 (2025-03-20)
+
+### 🚀 Features
+
+- updated package ([297743e](https://github.com/vietnguyen97/nx-boilerplate/commit/297743e))
+- **shared-utils:** update content ([8769b66](https://github.com/vietnguyen97/nx-boilerplate/commit/8769b66))
+
+### ❤️ Thank You
+
+- nhutnguyen
+
 ## 1.2.0 (2025-03-20)
 
 This was a version bump only, there were no code changes.
