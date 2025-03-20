@@ -7,6 +7,9 @@
     "release:app2": "nx run app2:version",
     "release:shared-utils": "nx run shared-utils:version",
     "release:all": "nx run-many --target=version --all",
+    "release:major": "nx run workspace:version --releaseAs=major",
+    "release:minor": "nx run workspace:version --releaseAs=minor",
+    "release:patch": "nx run workspace:version --releaseAs=patch",
     "commit": "cz",
     "build": "nx run-many --target=build --all",
     "build:versioned": "yarn version && yarn build"
