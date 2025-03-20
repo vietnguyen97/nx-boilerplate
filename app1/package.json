@@ -1,0 +1,8 @@
+{
+    "name": "app1",
+    "version": "1.1.0",
+    "main": "./index.js",
+    "dependencies": {
+        "shared-utils": "1.0.0"
+    }
+}

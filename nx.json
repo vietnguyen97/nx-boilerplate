@@ -82,7 +82,8 @@
   "release": {
     "version": {
       "conventionalCommits": true
-    }
+    },
+    "projects": ["shared-utils"]
   },
   "npmScope": "your-org"
 }
