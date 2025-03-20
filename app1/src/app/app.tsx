@@ -1,12 +1,12 @@
 import NxWelcome from './nx-welcome';
-
+import SharedUtils from '@my-workspace/shared-utils/SharedUtils';
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
   return (
     <div>
       <NxWelcome title="app1" />
-
+      <SharedUtils />
       <br />
       <hr />
       <br />

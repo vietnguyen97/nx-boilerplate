@@ -1,8 +1,8 @@
 {
   "name": "@my-workspace/shared-utils",
   "version": "0.0.4",
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./index.mjs",
@@ -10,10 +10,9 @@
     }
   },
   "scripts": {
-    "version": "nx run shared-utils:version",
-    "prebuild": "yarn version",
     "build": "nx build shared-utils",
-    "build:versioned": "node scripts/build-versioned.js"
+    "version": "nx run shared-utils:version",
+    "publish": "npm publish --access public"
   },
   "targets": {
     "build": {

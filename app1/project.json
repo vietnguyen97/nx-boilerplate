@@ -18,5 +18,8 @@
     "prebuild": "yarn version",
     "build": "nx build app1",
     "build:versioned": "node scripts/build-versioned.js"
+  },
+  "dependencies": {
+    "@my-workspace/shared-utils": "file:../dist/shared-utils"
   }
 }
