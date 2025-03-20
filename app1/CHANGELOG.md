@@ -7,6 +7,11 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 
 
+## 0.0.1 (2025-03-20)
+
+
+
+
 ## [0.0.4](//compare/app1-0.0.3...app1-0.0.4) (2025-03-19)
 
 
