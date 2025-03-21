@@ -1,3 +1,13 @@
+## 1.1.1 (2025-03-21)
+
+### 🩹 Fixes
+
+- change config project ([5d9ae4c](https://github.com/vietnguyen97/nx-boilerplate/commit/5d9ae4c))
+
+### ❤️ Thank You
+
+- nguyentv
+
 ## 2.1.0 (2025-03-20)
 
 ### 🚀 Features
