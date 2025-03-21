@@ -5,21 +5,16 @@
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/eslint.config.mjs",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/.eslintrc.json",
-      "!{projectRoot}/eslint.config.js",
-      "!{projectRoot}/jest.config.[jt]s",
-      "!{projectRoot}/src/test-setup.[jt]s",
-      "!{projectRoot}/test-setup.[jt]s"
+      "!{projectRoot}/src/test-setup.[jt]s"
     ],
     "sharedGlobals": []
   },
-  "nxCloudId": "67dac8352e7b0549f1a047df",
+  "nxCloudId": "67dd2249ae983611daee759d",
   "plugins": [
-    {
-      "plugin": "@jscutlery/semver"
-    },
     {
       "plugin": "@nx/js/typescript",
       "options": {
@@ -38,10 +33,10 @@
       "plugin": "@nx/vite/plugin",
       "options": {
         "buildTargetName": "build",
-        "testTargetName": "test",
-        "serveTargetName": "serve",
-        "previewTargetName": "preview",
-        "serveStaticTargetName": "serve-static",
+        "devTargetName": "dev",
+        "startTargetName": "start",
+        "watchDepsTargetName": "watch-deps",
+        "buildDepsTargetName": "build-deps",
         "typecheckTargetName": "typecheck"
       }
     },
@@ -52,9 +47,17 @@
       }
     },
     {
-      "plugin": "@nx/jest/plugin",
+      "plugin": "@nx/vite/plugin",
       "options": {
-        "targetName": "test"
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "devTargetName": "dev",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
       }
     }
   ],
@@ -62,15 +65,15 @@
     "@nx/react": {
       "application": {
         "babel": true,
-        "style": "none",
+        "style": "css",
         "linter": "eslint",
         "bundler": "vite"
       },
       "component": {
-        "style": "none"
+        "style": "css"
       },
       "library": {
-        "style": "none",
+        "style": "css",
         "linter": "eslint",
         "unitTestRunner": "none"
       }
@@ -78,9 +81,7 @@
   },
   "release": {
     "version": {
-      "conventionalCommits": true
-    },
-    "projects": ["*"]
-  },
-  "npmScope": "your-org"
+      "preVersionCommand": "yarn nx run-many -t build"
+    }
+  }
 }

@@ -1,10 +1,7 @@
 import NxWelcome from './nx-welcome';
 import { Route, Routes, Link } from 'react-router-dom';
-// import { sum } from "@hsc-share/ui"
-import { sum } from "@hsc-share/ui";
 
 export function App() {
-  console.log(sum(2, 3))
   return (
     <div>
       <NxWelcome title="app1" />

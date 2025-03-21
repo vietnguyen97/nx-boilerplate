@@ -1,24 +1,9 @@
 {
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "allowJs": false,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "types": ["vite/client"],
-    "baseUrl": "./",
-    "paths": {
-      "@hsc-share/ui": ["libs/ui/src/index.ts"]
-    }
-  },
   "files": [],
   "include": [],
   "references": [
     {
       "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
     }
   ],
   "extends": "../tsconfig.base.json"
