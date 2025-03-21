@@ -3,7 +3,6 @@
     "version": "0.0.1",
     "main": "./index.js",
     "dependencies": {
-        "@hsc-share/ui": "^0.0.7",
-        "shared-utils": "1.0.0"
+        "@hsc-share/ui": "^0.0.8"
     }
 }

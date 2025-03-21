@@ -1,8 +1,9 @@
 import NxWelcome from './nx-welcome';
-// import {} from '@hsc-share/ui'; // Removed as it is unused and causing an error
 import { Route, Routes, Link } from 'react-router-dom';
+// import { sum } from "@hsc-share/ui"
 
 export function App() {
+  // console.log(sum(2, 3))
   return (
     <div>
       <NxWelcome title="app1" />

@@ -2,21 +2,21 @@
 # yarn lockfile v1
 
 
-"@hsc-share/ui@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@hsc-share/ui/-/ui-0.0.7.tgz#570e905d4a3a8e1f1b435df0064e06de5f72890d"
-  integrity sha512-VEJnat24LxhEHGQqWTcbJ4xZbPmx3kgus48nAN+JJDJc6hdGOmCvsD49uI5fCBDgRfhKWkx6GJFGeaf+Q4tTWQ==
+"@hsc-share/ui@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.npmjs.org/@hsc-share/ui/-/ui-0.0.8.tgz#9e1097c943d72971eeb5c160fa0f4f8274549770"
+  integrity sha512-Dk5eFT0goJ54lpvW7sDYDQTKl9Z4x2FxpHFWF2MH7G4J8Wx3ees0QzQuxZIp7ajK4KQnLk70BeiOJQtm8SLwLQ==
 
 audio-utils@x.x.x:
   version "2.0.2"
-  resolved "https://registry.yarnpkg.com/audio-utils/-/audio-utils-2.0.2.tgz#aa5c371e758a76472340e9f44b3ecad2545857ab"
+  resolved "https://registry.npmjs.org/audio-utils/-/audio-utils-2.0.2.tgz#aa5c371e758a76472340e9f44b3ecad2545857ab"
   integrity sha512-gPvZRIRntxY2ybakvRFZp7TeEDUUqL4rIPR7zGGFUjnYmaq2KzSxhDG3zbWYVzc1pBjBOwyM7MiKGdU+Mip5Aw==
   dependencies:
     shared-utils "2.x.x"
 
 shared-utils@1.0.0, shared-utils@2.x.x:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/shared-utils/-/shared-utils-2.0.1.tgz#0cce161f5115a4c114a7435ac137f212f92355b0"
+  resolved "https://registry.npmjs.org/shared-utils/-/shared-utils-2.0.1.tgz#0cce161f5115a4c114a7435ac137f212f92355b0"
   integrity sha512-Vcs19dPxvGA7mQ5AuWqNuQl3YAPf+IbDajXOhiDYE1V5yQ9InxFKyrAUIwut/akGZlMV1zKP9nMgZB0pVwiUkg==
   dependencies:
     audio-utils x.x.x

@@ -24,6 +24,7 @@ npx nx generate @nrwl/react:library --name=hscUi --directory=libs/ui --publishab
 
 #push npm
 yarn nx build --name
+# cd to libs/project
 npm publish --access public
 
 ```
