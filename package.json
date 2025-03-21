@@ -1,6 +1,6 @@
 {
   "name": "@my-workspace/source",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "license": "MIT",
   "scripts": {
     "serve:app1": "nx serve app1",
