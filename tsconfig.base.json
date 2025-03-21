@@ -16,10 +16,5 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "baseUrl": ".",
-    "paths": {
-      "@hsc-ui/hscUi": ["libs/ui/src/index.ts"],
-      "@my-workspace/shared-utils": ["shared-utils/src/index.ts"]
-    }
   }
 }
