@@ -1,8 +1,8 @@
 {
-    "name": "app1",
-    "version": "0.0.2",
-    "main": "./index.js",
-    "dependencies": {
-        "@hsc-share/ui": "^0.0.8"
-    }
+  "name": "app1",
+  "version": "1.1.0",
+  "main": "./index.js",
+  "dependencies": {
+    "@hsc-share/ui": "^0.0.8"
+  }
 }

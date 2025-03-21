@@ -1,6 +1,6 @@
 {
   "name": "@hsc-share/ui",
-  "version": "0.0.10",
+  "version": "1.1.0",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "exports": {
