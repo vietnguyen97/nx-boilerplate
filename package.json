@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "serve:app1": "nx serve app1",
+    "serve:app2": "nx serve app2",
     "release:app1": "nx run app1:version",
     "release:app2": "nx run app2:version",
     "release:shared-utils": "nx run shared-utils:version",

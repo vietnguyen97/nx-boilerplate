@@ -4,6 +4,7 @@
   "main": "./index.js",
   "private": true,
   "dependencies": {
+    "@hsc-share/ui": "../libs/ui/hsc-share-ui-1.4.0.tgz",
     "shared-utils": "1.0.0"
   }
 }
