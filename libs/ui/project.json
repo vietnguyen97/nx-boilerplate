@@ -1,5 +1,6 @@
 {
   "executor": "@jscutlery/semver:version",
+  "version": "0.0.1",
   "options": {
     "baseBranch": "master",
     "preset": "atom"
