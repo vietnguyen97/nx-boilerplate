@@ -1506,11 +1506,6 @@
     "@eslint/core" "^0.12.0"
     levn "^0.4.1"
 
-"@hsc-share/ui@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.npmjs.org/@hsc-share/ui/-/ui-0.0.10.tgz#d3106f33d28220ca250625a0e5306148331e0f55"
-  integrity sha512-IQEK5QUIUTl9K6lhnuMTtPu/VtTzTugkX6CWmVZM+9De48dFOyl5alPLvZajfvEv4HPDyjBf3ee9fq9WyXRPYw==
-
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.npmjs.org/@humanfs/core/-/core-0.19.1.tgz#17c55ca7d426733fe3c561906b8173c336b40a77"

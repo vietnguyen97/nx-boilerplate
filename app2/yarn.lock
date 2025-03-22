@@ -4,18 +4,4 @@
 
 "@hsc-share/ui@../libs/ui/hsc-share-ui-1.4.0.tgz":
   version "1.4.0"
-  resolved "../libs/ui/hsc-share-ui-1.4.0.tgz#8a3b420705c4c318b6f7ace0143b0b195fbf80a6"
-
-audio-utils@x.x.x:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/audio-utils/-/audio-utils-2.0.2.tgz#aa5c371e758a76472340e9f44b3ecad2545857ab"
-  integrity sha512-gPvZRIRntxY2ybakvRFZp7TeEDUUqL4rIPR7zGGFUjnYmaq2KzSxhDG3zbWYVzc1pBjBOwyM7MiKGdU+Mip5Aw==
-  dependencies:
-    shared-utils "2.x.x"
-
-shared-utils@1.0.0, shared-utils@2.x.x:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/shared-utils/-/shared-utils-2.0.1.tgz#0cce161f5115a4c114a7435ac137f212f92355b0"
-  integrity sha512-Vcs19dPxvGA7mQ5AuWqNuQl3YAPf+IbDajXOhiDYE1V5yQ9InxFKyrAUIwut/akGZlMV1zKP9nMgZB0pVwiUkg==
-  dependencies:
-    audio-utils x.x.x
+  resolved "../libs/ui/hsc-share-ui-1.4.0.tgz#8063fd66c25a6258ff5e52f24461de70aa095779"

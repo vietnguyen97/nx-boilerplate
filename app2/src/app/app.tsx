@@ -1,8 +1,9 @@
 import NxWelcome from './nx-welcome';
-
+import { mul } from '@hsc-share/ui';
 import { Route, Routes, Link } from 'react-router-dom';
 
 export function App() {
+  console.log(mul(2, 3));
   return (
     <div>
       <NxWelcome title="app2" />
