@@ -18,7 +18,8 @@
     "target": "es2022",
     "baseUrl": ".",
     "paths": {
-      "@hsc-share/ui": ["libs/ui/src/index.ts"]
+      "@hsc-share/ui": ["libs/ui/src/index.ts"],
+      "@nx-boilerplate/ui": ["libs/ui/src/index.ts"]
     }
   }
 }
